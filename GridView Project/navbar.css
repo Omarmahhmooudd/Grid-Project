@@ -1,0 +1,49 @@
+.navbar { 
+    display:grid;
+    padding: 0 ; 
+    background: #000;
+    grid-template-columns: auto 1fr;
+}
+.navbar img {
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    float: right;
+}
+
+.nav-links {
+    align-self: center;
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 1rem;
+
+}
+.nav-links li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: gray;
+    font-size: larger;
+    padding:1rem;
+}
+
+.nav-link {
+    color: gray;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition:all 0.3s linear;
+    color: azure;
+    
+    
+}
+.nav-link a:hover {
+    color: white;
+    background-color: darkgrey;
+}
+
+.active {
+    color: green;
+}
